@@ -1,0 +1,97 @@
+Found 96 text segments
+MINISTÉRIO DA DEFESA
+EXÉRCITO BRASILEIRO
+COMANDO DA 2ª REGIÃO MILITAR
+(Cmdo das Armas Prov PR /1890)
+“REGIÃO DAS BANDEIRAS”
+PROPOSTA DE CONCESSÃO DE PASSAGENS E DIÁRIAS
+1. Proposta de concessão de passagens e diárias:
+ 
+nº
+ 
+{{nr pcpd}}
+2. Beneficiário
+             (
+  
+) Militar                (  ) Servidor Civil               (   ) Colaborador Eventual
+Nome: {{nome completo}}
+OM: {{OM}}
+Posto/Grad: {{posto/grad}}
+Data Nascimento: {{data nascimento}}
+CPF: {{cpf}}
+Banco: {{banco}}
+Agência: {{agencia}}
+Conta Corrente: {{conta}}
+E-mail: {{email}}
+Telefone Fixo:
+Telefone Celular:
+ 
+{{celular}}
+3. Afastamento da sede:
+ (Caçapava - SP x {{afastamento}} x Caçapava- SP)
+Ida (GDH): {{ida}}
+Volta (GDH): {{volta}}
+BI que publicou a autorização para o afastamento: {{bi}}
+4. Evento: 
+{{evento}}
+Início (GDH): {{inicio}}
+Término (GDH): {{termino}}
+Quantidade de cidades previstas na missão: {{
+qtd cidades}}
+5. Justificativa
+ (se o afastamento da sede iniciar a partir de sexta-feira, bem como os que incluam sábados, domingos e feriados):
+6. Diárias
+Localidade de destino: {{destino}}.
+O militar ficará alojado em OM ou em outra pousada sem ônus:
+ 
+(  ) Sim                   (  ) Não         
+Nº de dias: {{nr dias}}
+Nº de diárias: {{nr diaria}}
+Valor Total de diárias: {{valor}}
+O militar utilizará veículo oficial:
+( 
+ 
+) Sim                   (  ) Não                      (   ) Em parte da viagem
+Valor da tarifa de embarque e desembarque (SFC): R$ {{valor tarifa}}
+IMPORTANTE:
+ O militar não fará jus à tarifa caso utilize veículo oficial para o aeroporto de embarque/desembarque.
+Obs: preenchido pela STA
+Precisará de conexões que exijam transporte conforme § 3º Art. 17, da Portaria n° 290.
+Quantas:
+(   ) Sim      ( x ) Não    (   ) com Veículo Oficial
+Especificação do tipo de Conexão:
+Valor total a receber: R$ {{valor}}
+Categoria de transporte:
+ (  ) rodoviário     (  ) aéreo       (  ) ferroviário      (  ) aquaviário
+ (    )    Meios Próprios     (    ) Viatura Oficial
+Obs:
+8. Justificativa para viagem urgente:
+ {{justificativa}}
+9. Órgão cotista
+As despesas relativas a esta requisição correm por conta das cotas de diária e passagem do(a):
+10. Local e data
+Caçapava-SP, {{dia}} de {{mês}} de {{ano}}.
+11. 
+Autoridade requisitante
+Na qualidade de autoridade requisitante, solicito a emissão da requisição de transporte (SFC) e o pagamento das diárias.
+_____________________________________
+{{nome requisitante}}
+ - 
+{{posto grad requisitante}}
+{{funcao requisitante}}
+12. 
+Responsável pela reserva da passagem aérea
+A reserva foi efetuada com o menor preço.
+______________________________________
+AUXILIAR DA SALC
+13. 
+Responsável pelo cadastro e pedido de diária
+___________________________________
+FRANCISCO ROCHA LUNARDI – Cap R1
+Chefe da STA
+14. 
+Ordenador de Despesa
+Na qualidade de Ordenador de Despesa, autorizo a emissão da requisição de transporte (SFC) e o pagamento das diárias.
+_______________________________
+ADRIANO MARTINS BORBA - Cel
+ORDENADOR DE DESPESAS

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STA - Sistema de Controle de Missões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Overlay -->
+    <div id="loginOverlay" class="login-overlay">
+        <div class="login-box">
+            <div class="login-header">
+                <h1>STA</h1>
+                <span>Sistema de Missões</span>
+            </div>
+            <div class="login-tabs">
+                <button class="login-tab active" id="loginTabLogin">Entrar</button>
+                <button class="login-tab" id="loginTabAnon">Anônimo</button>
+            </div>
+            <div id="loginFormArea">
+                <div class="login-form-group">
+                    <label>Usuário</label>
+                    <input type="text" id="loginUser" placeholder="Digite seu usuário" autocomplete="username">
+                </div>
+                <div class="login-form-group">
+                    <label>Senha</label>
+                    <input type="password" id="loginPass" placeholder="Digite sua senha" autocomplete="current-password">
+                </div>
+                <div id="loginError" class="login-error hidden"></div>
+                <button class="login-btn" id="loginBtn">Entrar</button>
+            </div>
+            <div id="anonFormArea" class="hidden">
+                <p class="login-desc">Entre como anônimo para gerenciar militares.</p>
+                <button class="login-btn login-btn-anon" id="loginBtnAnon">Entrar como Anônimo</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="app" class="hidden">
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <h1>STA</h1>
+                    <span class="subtitle">Sistema de Missões</span>
+                </div>
+                <button id="sidebarToggle" class="sidebar-toggle-btn" title="Alternar Menu">
+                    <span class="toggle-icon">&#9776;</span>
+                </button>
+            </div>
+            <div class="sidebar-user" id="sidebarUser">
+                <span class="sidebar-user-icon">&#128100;</span>
+                <div class="sidebar-user-info">
+                    <span class="sidebar-user-name" id="userDisplayName">Anônimo</span>
+                    <span class="sidebar-user-role" id="userDisplayRole"></span>
+                </div>
+            </div>
+            <nav id="nav">
+                <div class="nav-section">Principal</div>
+                <button class="nav-btn active" data-view="dashboard">
+                    <span class="nav-icon">&#128202;</span>
+                    <span class="nav-label">Dashboard</span>
+                </button>
+
+                <div class="nav-section">Lançamentos</div>
+                <button class="nav-btn" data-view="criarPcpd">
+                    <span class="nav-icon">&#10010;</span>
+                    <span class="nav-label">Criar PCPD</span>
+                </button>
+                <button class="nav-btn" data-view="pcpd">
+                    <span class="nav-icon nav-icon-pcpd">&#128211;</span>
+                    <span class="nav-label">Upload PCPD</span>
+                </button>
+                <button class="nav-btn" data-view="uploadNc">
+                    <span class="nav-icon nav-icon-nc">&#128176;</span>
+                    <span class="nav-label">Upload NC</span>
+                </button>
+
+                <div class="nav-section">Consultas</div>
+                <button class="nav-btn" data-view="missoes">
+                    <span class="nav-icon">&#9992;</span>
+                    <span class="nav-label">Missões</span>
+                </button>
+                <button class="nav-btn" data-view="militares">
+                    <span class="nav-icon">&#128100;</span>
+                    <span class="nav-label">Militares</span>
+                </button>
+                <button class="nav-btn" data-view="ncs">
+                    <span class="nav-icon">&#128179;</span>
+                    <span class="nav-label">Notas de Crédito</span>
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="nav-section">Sistema</div>
+                <button id="btnGerenciarAcessos" class="nav-btn hidden">
+                    <span class="nav-icon">&#128273;</span>
+                    <span class="nav-label">Gerenciar Acessos</span>
+                </button>
+                <button id="btnLogout" class="nav-btn nav-btn-logout">
+                    <span class="nav-icon">&#128682;</span>
+                    <span class="nav-label">Sair</span>
+                </button>
+                <span class="version">v1.0</span>
+            </div>
+        </aside>
+
+        <main id="main">
+            <header id="topbar">
+                <h2 id="viewTitle">Dashboard</h2>
+            </header>
+            <div id="content"></div>
+        </main>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pizzip@3.0.6/dist/pizzip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docxtemplater@3.54.1/build/docxtemplater.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <script src="database.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

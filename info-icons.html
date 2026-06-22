@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Escolha de Ícones de Informação</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 2rem;
+            background: #fafafa;
+            color: #333;
+        }
+        h1 { color: #0066cc; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,.05);
+            text-align: center;
+        }
+        .icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: .5rem;
+        }
+        .blue   { background:#06b6d4; }
+        .gray   { background:#6b7280; }
+        .green  { background:#10b981; }
+        .orange { background:#f59e0b; }
+        .red    { background:#ef4444; }
+        pre {
+            background:#f5f5f5;
+            padding:.5rem;
+            overflow-x:auto;
+            font-size:.85rem;
+        }
+    </style>
+</head>
+<body>
+<h1>Ícones de Informação – Escolha um</h1>
+<div class="grid">
+    <div class="card">
+        <div class="icon blue">i</div>
+        <p>Azul clássico (default)</p>
+        <pre>&lt;span class="info-circle"&gt;i&lt;/span&gt;</pre>
+    </div>
+    <div class="card">
+        <div class="icon gray">i</div>
+        <p>Cinza neutro</p>
+        <pre>&lt;span class="info-circle gray"&gt;i&lt;/span&gt;</pre>
+    </div>
+    <div class="card">
+        <div class="icon green">i</div>
+        <p>Verde “ok”</p>
+        <pre>&lt;span class="info-circle green"&gt;i&lt;/span&gt;</pre>
+    </div>
+    <div class="card">
+        <div class="icon orange">i</div>
+        <p>Laranja – chama atenção</p>
+        <pre>&lt;span class="info-circle orange"&gt;i&lt;/span&gt;</pre>
+    </div>
+    <div class="card">
+        <div class="icon red">i</div>
+        <p>Vermelho – alerta</p>
+        <pre>&lt;span class="info-circle red"&gt;i&lt;/span&gt;</pre>
+    </div>
+    <div class="card">
+        <i class="fa-solid fa-circle-info" style="font-size:22px;color:#06b6d4;"></i>
+        <p>Font‑Awesome (necessita &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"&gt;)</p>
+        <pre>&lt;i class="fa-solid fa-circle-info"&gt;&lt;/i&gt;</pre>
+    </div>
+    <div class="card">
+        <span class="material-icons" style="font-size:22px;color:#06b6d4;">info</span>
+        <p>Material Icons (necessita &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;)</p>
+        <pre>&lt;span class="material-icons"&gt;info&lt;/span&gt;</pre>
+    </div>
+    <div class="card">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#06b6d4" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12"/>
+            <text x="12" y="16" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" font-weight="bold">i</text>
+        </svg>
+        <p>SVG embutido – não depende de CSS externo</p>
+        <pre>&lt;svg …&gt;…&lt;/svg&gt;</pre>
+    </div>
+</div>
+</body>
+</html>
